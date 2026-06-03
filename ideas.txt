@@ -1,0 +1,22 @@
+Variables & Simple Data Types (Strings, Numbers)
+--all
+Collections (Lists, Tuples, Dictionaries)
+--pet info
+Control Flow (if, elif, else statements)
+--what species
+Iteration (for loops and while loops)
+--histroy
+User Interaction (Accepting input and controlling program state)
+--filling out paperwork
+
+
+thank you for choosing daniel's dog clinic
+pls fill out ur paperwork
+what species is your pet
+    sorry, we dont see [pet]s, only dogs
+name, age, etc
+ok lets get [name] the [age] [breed] medical history
+do you have any previous diagnoses to report [y/n]?
+    y --> diagnosis and date
+heres ur form, well call you abt an appt
+[asci pretty form w the spacing stuff from unit 1]
