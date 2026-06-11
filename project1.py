@@ -65,7 +65,7 @@ while True: #register infinite dogs
     if current_dog['history']:
         for item in current_dog['history']:
             print(f"|{f'     {item}':<{FORM_WIDTH}}|")
-    else: #no history was reported
+    else:
         print(f"|{'     none':<{FORM_WIDTH}}|")
     
     print(blank_line)
