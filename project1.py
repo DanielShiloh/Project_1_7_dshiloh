@@ -1,4 +1,12 @@
+"""
+Dog Registration Form-Filler
+Daniel Shiloh
+Pre-fill a registration form with owner and dog information
+June 11, 2026
+"""
+
 FORM_WIDTH = 40
+blank_line = "|" + " " * FORM_WIDTH + "|"
 dog_db = []
 all_dogs_names = ""
 
@@ -17,8 +25,7 @@ print("Great!  Let's get some information on you and your dog.")
 human_first_name = input("What is your first name? ").title()
 human_last_name = input("What is your last name? ").title()
 
-#register infinite dogs
-while True:
+while True: #register infinite dogs
 
     current_dog = {
         'name': input("What is your dog's name? ").title(),
@@ -37,12 +44,10 @@ while True:
 
     dog_db.append(current_dog)
 
-    #print registration form --start
-    blank_line = "|" + " " * FORM_WIDTH + "|"
-
     print(f"Please bring {current_dog['name']}'s completed form to your visit.")
-
-    print("\n " + "_" * FORM_WIDTH) #upper bound of form
+    
+    #print registration form --start
+    print("\n " + "_" * FORM_WIDTH)
     
     print(blank_line)
     
