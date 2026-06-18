@@ -5,10 +5,6 @@ Pre-fill a registration form with owner and dog information
 June 17, 2026
 """
 
-FORM_WIDTH = 40
-blank_line = "|" + " " * FORM_WIDTH + "|"
-dog_db = []
-
 def print_intro():
     """Print intro message to user"""
     intro = "Thank you for choosing Daniel's Dog Clinic."
@@ -18,7 +14,7 @@ def print_intro():
 def confirm_is_dog():
     """Ask user for species, repeat until is dog"""
     species = input("What species is your pet? ")
-    while species != "dog":
+    while species.lower() != "dog":
         species = decline_pet(species)
     print("Great!  Let's get some information on you and your dog.")
     
@@ -68,6 +64,10 @@ def print_registration_form(first, last, dog):
         last (str): human last name
         dog (dict): name, age, sex, breed, medical history (list)
     """
+
+    FORM_WIDTH = 40
+    blank_line = "|" + " " * FORM_WIDTH + "|"
+
     print(f"Please bring {dog['name']}'s completed form to your visit.")
     
     print("\n " + "_" * FORM_WIDTH)
@@ -111,6 +111,8 @@ def print_outro(dog_db):
 def main():
     """Register owner and dogs with clinic,
     fill form to bring to visit"""
+
+    dog_db = []
 
     print_intro()
 
